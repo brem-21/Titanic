@@ -41,39 +41,59 @@ The Titanic dataset consists of features like:
   ![parents](Images/parents.png)
 
 ### 2. Data Cleaning and Preprocessing
-- **Steps Taken**:
-  - Imputed missing values for `Age` using median values grouped by `Pclass` and `Sex`.
-  - Filled missing `Embarked` values with the most frequent category.
-  - Scaled numerical features like `Age` and `Fare` for uniformity.
+- Missing values in the `Age`, `Embarked` and the `Cabin` Columns
+  ![missing values](Images/missing_values.png)
+
+ - Handling missing values using mean imputation for `Age`, and mode imputation for `Embarked` and `Cabin`.
+    ![alt text](/Images/image.png)
+
+- Encoding categorical variables using Label encoding for `Pclass`,`Sex`,`Embarked`, and `Survived`.
+
+- Dropping Irrelevant columns since it's correlation with the target variable `Survived` is very low.
+    After dropping the columns, the dataset is reduced to **8** features.
+    ['Pclass', 'Sex', 'Age', 'SibSp', 'Parch', 'Fare', 'Embarked',
+       'Survived']
+
+- Scaling the Features using StandardScaler to reduce the effect of feature scaling on the model.
+    ![scaled](Images/scaled.png)
 
 ### 3. Feature Engineering
-- **Features Created**:
-  - `FamilySize`: Sum of `SibSp` and `Parch`.
-  - `IsAlone`: Binary feature indicating whether the passenger was traveling alone.
 - **Feature Selection**:
   - Retained features with high correlation to survival or importance from model analysis.
+  - Using mutual information to select the most **6** informative features.
+  ![features](Images/feature.png)
 
 ### 4. Model Training and Evaluation
 - **Models Used**:
   - Logistic Regression
-  - Random Forest
+  - Random Forest Classifier
   - Support Vector Machine
+  - Decision Tree Classifier
+  - Gradient Boosting Classifier
+  - K-Nearest Neighbors
+
+
 - **Metrics**:
   - Accuracy
   - Precision, Recall, and F1-Score
   - ROC-AUC for classification quality
+
+     ![model results](Images/model_results.png)
+
 - **Results**:
-  Random Forest consistently outperformed other models in all metrics.
+  Gradient Boosting outperformed other models in accuracy.
 
 ### 5. Model Optimization
 - **Hyperparameter Tuning**:
   - GridSearchCV was used  to find the best model.
-  - The optimized model Decision achieved an accuracy of 81%.
+  ![optimized](Images/optimized.png)
+  - The optimized model `Decision Tree` achieved an accuracy of 81%.
 
 ### 6. Testing and Submission
 - **Prediction**:
-  - Final model was applied to the test dataset.
-  - Results were saved in a submission file format.
+  - Final model was applied to the [test dataset](Data/test.csv) and acheived an accuracy of 0.78.
+  ![test_results](Images/test_results.png)
+  - Results were saved in a [submission](Data/Brempong_submission.csv) file format.
 
 
 
@@ -81,11 +101,11 @@ The Titanic dataset consists of features like:
 The project demonstrated a comprehensive approach to machine learning, with Decision Tree emerging as the best model. Future work could explore deep learning or external data sources for further enhancement.
 
 ## Recommendations
-- Use ensemble methods like Gradient Boosting.
+- Use Tree methods like Gradient Boosting.
 - Include text analysis for features like names and tickets.
 - Explore imputation methods like KNN for handling missing data.
 
 ## Appendix
-- **Code**: Attached in the Jupyter Notebook.
-- **Visualizations**: Included in the notebook for better understanding of trends.
+- **Code**: [Attached in the Jupyter Notebook.](Notebook/Titanic.ipynb)
+- **Visualizations**: Included in the notebook and the [Images directory](Images) for better understanding of trends.
 
