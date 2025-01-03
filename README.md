@@ -86,17 +86,13 @@ The Titanic dataset consists of features like:
 ### 5. Model Optimization
 - **Hyperparameter Tuning**:
   - GridSearchCV was used  to find the best model.
-
   ![optimized](Images/optimized.png)
-
   - The optimized model `Decision Tree` achieved an accuracy of 81%.
 
 ### 6. Testing and Submission
 - **Prediction**:
   - Final model was applied to the [test dataset](Data/test.csv) and acheived an accuracy of 0.78.
-
   ![test_results](Images/test_results.png)
-
   - Results were saved in a [submission](Data/Brempong_submission.csv) file format.
 
 
