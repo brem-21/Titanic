@@ -3,7 +3,7 @@ PassengerId,Prediction
 161,Not Survived
 554,Not Survived
 861,Not Survived
-242,Not Survived
+242,Survived
 560,Not Survived
 388,Survived
 537,Not Survived
@@ -11,7 +11,7 @@ PassengerId,Prediction
 100,Not Survived
 127,Not Survived
 334,Not Survived
-217,Survived
+217,Not Survived
 818,Not Survived
 28,Survived
 704,Not Survived
@@ -33,8 +33,8 @@ PassengerId,Prediction
 731,Survived
 66,Not Survived
 76,Not Survived
-490,Survived
-870,Survived
+490,Not Survived
+870,Not Survived
 166,Not Survived
 72,Not Survived
 429,Not Survived
@@ -50,7 +50,7 @@ PassengerId,Prediction
 645,Survived
 323,Survived
 760,Survived
-565,Survived
+565,Not Survived
 503,Survived
 18,Not Survived
 680,Survived
@@ -58,8 +58,8 @@ PassengerId,Prediction
 640,Not Survived
 702,Survived
 107,Survived
-448,Not Survived
-579,Not Survived
+448,Survived
+579,Survived
 473,Survived
 765,Not Survived
 398,Not Survived
@@ -126,12 +126,12 @@ PassengerId,Prediction
 776,Not Survived
 825,Not Survived
 337,Not Survived
-800,Survived
+800,Not Survived
 677,Not Survived
 608,Not Survived
 827,Not Survived
 757,Not Survived
-187,Not Survived
+187,Survived
 412,Not Survived
 550,Survived
 442,Not Survived
@@ -141,7 +141,7 @@ PassengerId,Prediction
 445,Not Survived
 672,Not Survived
 297,Not Survived
-803,Survived
+803,Not Survived
 138,Survived
 533,Not Survived
 588,Not Survived
@@ -152,9 +152,9 @@ PassengerId,Prediction
 805,Not Survived
 732,Not Survived
 89,Survived
-40,Not Survived
+40,Survived
 493,Not Survived
-824,Survived
+824,Not Survived
 887,Not Survived
 354,Not Survived
 686,Not Survived
@@ -164,7 +164,7 @@ PassengerId,Prediction
 301,Survived
 880,Survived
 531,Survived
-294,Not Survived
+294,Survived
 815,Not Survived
 516,Not Survived
 200,Survived
