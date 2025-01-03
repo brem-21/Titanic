@@ -42,6 +42,7 @@ The Titanic dataset consists of features like:
 
 ### 2. Data Cleaning and Preprocessing
 - Missing values in the `Age`, `Embarked` and the `Cabin` Columns.
+    
     ![missing values](Images/missing_values.png)
 
  - Handling missing values using mean imputation for `Age`, and mode imputation for `Embarked` and `Cabin`.
