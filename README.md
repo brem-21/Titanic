@@ -94,7 +94,7 @@ The Titanic dataset consists of features like:
 
 ### 6. Testing and Submission
 - **Prediction**:
-  - Final model was applied to the [test dataset](Data/test.csv) and acheived an accuracy of 0.78.
+  - Final model was applied to the [test dataset](Data/test.csv) and acheived an accuracy of 78%.
 
   ![test_results](Images/test_results.png)
 
@@ -103,12 +103,19 @@ The Titanic dataset consists of features like:
 
 
 ## Conclusion
-The project demonstrated a comprehensive approach to machine learning, with Decision Tree emerging as the best model. Future work could explore deep learning or external data sources for further enhancement.
+The project demonstrated a comprehensive approach to machine learning, with Decision Tree emerging as the best model.
 
-## Recommendations
-- Use Tree methods like Gradient Boosting.
-- Include text analysis for features like names and tickets.
-- Explore imputation methods like KNN for handling missing data.
+- The analysis reveals significant relationships between the port of embarkation and ticket class, highlighting the following key points:
+
+`Economic Stratification:`
+   - Southampton and Queenstown primarily served 3rd-class passengers, reflecting their roles as departure points for economically disadvantaged travelers.
+    Cherbourg catered predominantly to wealthier 1st-class passengers, indicating its prominence among affluent communities.
+
+`Class Inequality:`
+ -  There was clear class stratification, with wealthier passengers embarking mostly from Cherbourg, while lower-class passengers dominated Southampton and Queenstown.
+
+`Historical Implications:`
+ - These disparities likely influenced survival outcomes during the Titanic disaster, as 1st-class passengers had greater access to safety measures, such as lifeboats.
 
 ## Appendix
 - **Code**: [Attached in the Jupyter Notebook.](Notebook/Titanic.ipynb)
