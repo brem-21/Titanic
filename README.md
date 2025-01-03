@@ -115,7 +115,7 @@ The project demonstrated a comprehensive approach to machine learning, with Deci
  -  There was clear class stratification, with wealthier passengers embarking mostly from Cherbourg, while lower-class passengers dominated Southampton and Queenstown.
 
 `Historical Implications:`
- - These disparities likely influenced survival outcomes during the Titanic disaster, as 1st-class passengers had greater access to safety measures, such as lifeboats.
+ - These disparities likely influenced survival outcomes during the Titanic disaster, as 1st-class passengers had greater access to safety measures, such as lifeboats, Hnece increasing their chance of survival.
 
 ## Appendix
 - **Code**: [Attached in the Jupyter Notebook.](Notebook/Titanic.ipynb)
